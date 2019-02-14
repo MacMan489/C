@@ -1,0 +1,31 @@
+Assignment: 
+Write a C program that appends your student identification number to a file called attendance.dat located in a folder c:\programming\exam
+
+
+My code: 
+#include<stdio.h>
+
+#include<stdlib.h>
+
+int main()
+
+{
+
+FILE *fp;
+
+//suppose your sid is 1000
+
+int SID = 1000;
+
+//open the file in append mode
+
+fp = fopen("c:\programming\exam", "a");
+
+fprint(fp, "%d", SID);
+
+fclose(fp);
+
+return 0;
+
+}
+
